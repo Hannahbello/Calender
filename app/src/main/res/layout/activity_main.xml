@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/selectedDays"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/selectedMonth"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/selectedYear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+<CalendarView
+    android:id="@+id/calenderView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<LinearLayout
+    android:id="@+id/dayEvent"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/teal_200"
+        android:onClick="insertEvent"
+        android:text="Save Event" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:hint="Event"
+        android:id="@+id/textInput"/>
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>
